@@ -1,3 +1,9 @@
+node_modules/
+.env
+dist/ # Muy importante ignorar la carpeta de build
+
+
+
 # Logs
 logs
 *.log
@@ -47,3 +53,5 @@ Thumbs.db      # Archivos específicos de Windows
 # a menos que lo generes dinámicamente y quieras evitar que se versionen los cambios locales.
 # Si lo creas y gestionas manualmente en el servidor, no hace falta aquí.
 # .htaccess
+
+
