@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Runtime data
+*.cjs
+*.mjs
+*.js
+
+# Directory for compiled output
+dist/          # Esto es crucial para Vite, ya que es el resultado de `npm run build`
+dist-ssr/
+
+# Dependencies
+node_modules/  # Muy importante para ignorar todas las librerías instaladas
+
+# Temporary files
+.tmp/
+.DS_Store      # Archivos específicos de macOS
+Thumbs.db      # Archivos específicos de Windows
+
+# Editor directories and files
+.vscode/       # Configuración de VS Code
+.idea/         # Configuración de WebStorm/IntelliJ
+*.sublime-project
+*.sublime-workspace
+
+# Local .env files (IMPORTANTE: Nunca subas tus variables de entorno locales)
+.env
+.env.*.local
+.env.local
+
+# Vite-specific (si hay archivos generados por Vite que no deben versionarse)
+.vite/
+
+# Hostinger / Hosting specific (si creas archivos temporales o de configuración ahí)
+# Aunque .htaccess se sube a Hostinger, no es un archivo de desarrollo,
+# por lo que no es estrictamente necesario en el .gitignore de tu proyecto local
+# a menos que lo generes dinámicamente y quieras evitar que se versionen los cambios locales.
+# Si lo creas y gestionas manualmente en el servidor, no hace falta aquí.
+# .htaccess
