@@ -7,7 +7,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // URL de tu backend
 // Asegúrate de que esta URL coincida con la dirección y puerto de tu servidor Node.js
-const API_BASE_URL = 'https://dysback.vercel.app/'; 
+const API_BASE_URL = 'https://dysback.vercel.app/api/images'; 
 
 function Gallery() {
   const [images, setImages] = useState([]);
