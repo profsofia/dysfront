@@ -58,6 +58,8 @@ function Gallery() {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       const data = await response.json();
+      console.log('Datos recibidos:', data);
+
 
       // Aplica transformaciones de Cloudinary en el frontend para las miniaturas
       // Si tu backend ya devuelve URLs transformadas, puedes eliminar este .map()
@@ -68,7 +70,7 @@ function Gallery() {
       }));
 
       setImages(prevImages => [...prevImages, ...transformedImages]);
-      setNextCursor(data.next_cursor); // Guarda el cursor para la próxima solicitud
+      setNextCursor(data.next_cursor || null); // Guarda el cursor para la próxima solicitud
       setHasMore(data.hasMore); // Actualiza si hay más páginas
     } catch (err) {
       console.error("Error al obtener imágenes:", err);
