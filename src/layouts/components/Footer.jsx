@@ -13,7 +13,7 @@ const Footer = () => {
   const contactInfo = [
     { icon: <MapPin className="w-5 h-5 text-primary mr-3 mt-0.5" />, text: 'Calle Bermudez s/n, Ezeiza' },
     { icon: <Phone className="w-5 h-5 text-primary mr-3" />, text: '+54 9  11 6683 0995' },
-    { icon: <Mail className="w-5 h-5 text-primary mr-3" />, text: 'info@dysconstructora.com' },
+    { icon: <Mail className="w-5 h-5 text-primary mr-3" />, text: 'construccionesdiegoysofia@gmail.com' },
   ];
 
   const socialLinks = [
